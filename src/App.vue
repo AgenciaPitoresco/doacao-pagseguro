@@ -13,6 +13,7 @@
     <h2 class="amount-title">Escolha um valor</h2>
     <div class="amounts">
       <button class="option" @click.prevent="amount=10; useCustomAmount=false;" :class="{active: amount == 10}">R$ 10</button>
+      <button class="option" @click.prevent="amount=20; useCustomAmount=false" :class="{active: amount == 20}">R$ 20</button>
       <button class="option" @click.prevent="amount=50; useCustomAmount=false" :class="{active: amount == 50}">R$ 50</button>
       <button class="option" @click.prevent="amount=100; useCustomAmount=false" :class="{active: amount == 100}">R$ 100</button>
       <button class="option" @click.prevent="setUseCustom" :class="{active: useCustomAmount}">Outro Valor</button>
